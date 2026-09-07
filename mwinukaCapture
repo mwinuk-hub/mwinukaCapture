@@ -1,0 +1,32 @@
+#!/usr/bin/env python3
+import cv2
+import os
+from datetime import datetime
+import sys
+
+HOME = os.path.expanduser("~")
+SAVE_DIR = os.path.join(HOME, "intruders")
+os.makedirs(SAVE_DIR, exist_ok=True)
+
+def capture_intruder():
+    cam = cv2.VideoCapture(0)
+
+    if not cam.isOpened():
+        print("[ERROR] Camera not accessible")
+        sys.exit(1)
+
+    ret, frame = cam.read()
+    cam.release()
+
+    if not ret:
+        print("[ERROR] Failed to capture image")
+        sys.exit(1)
+
+    timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+    filepath = os.path.join(SAVE_DIR, f"{timestamp}.jpg")
+
+    cv2.imwrite(filepath, frame)
+    print(f"[OK] Intruder captured: {filepath}")
+
+if __name__ == "__main__":
+    capture_intruder()
