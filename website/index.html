@@ -1,0 +1,286 @@
+S<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>mwinukaCapture - Simple Screen Capture Tool</title>
+
+    <meta name="description"
+          content="mwinukaCapture is a simple, lightweight and open-source screen capture tool.">
+
+    <meta name="keywords"
+          content="mwinukaCapture, screen capture, screenshot, Linux, Windows">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #0f172a;
+            color: white;
+        }
+
+        header {
+            min-height: 650px;
+            padding: 70px 20px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            width: 1500px;
+            height: 1500px;
+            object-fit: contain;
+            border-radius: 25px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            font-size: 55px;
+            margin: 10px 0;
+        }
+
+        .subtitle {
+            max-width: 700px;
+            font-size: 21px;
+            line-height: 1.6;
+            color: #cbd5e1;
+        }
+
+        .buttons {
+            margin-top: 50px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 15px 28px;
+            margin: 8px;
+            border-radius: 10px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: #1d4ed8;
+            transform: translateY(-2px);
+        }
+
+        .github {
+            background: #334155;
+        }
+
+        .github:hover {
+            background: #475569;
+        }
+
+        section {
+            padding: 70px 20px;
+            text-align: center;
+            background: #1e293b;
+        }
+
+        section h2 {
+            font-size: 35px;
+            margin-bottom: 35px;
+        }
+
+        .features {
+            max-width: 900px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+
+        .feature {
+            background: #0f172a;
+            padding: 25px;
+            border-radius: 15px;
+        }
+
+        .feature h3 {
+            margin-top: 0;
+        }
+
+        .feature p {
+            color: #cbd5e1;
+            line-height: 1.5;
+        }
+
+        .screenshot-section {
+            background: #0f172a;
+        }
+
+        .screenshot {
+            display: block;
+            width: 100%;
+            max-width: 1000px;
+            margin: 30px auto 0;
+            border-radius: 15px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.45);
+        }
+
+        .download {
+            background: #1e293b;
+        }
+
+        .download p {
+            max-width: 650px;
+            margin: 0 auto 25px;
+            color: #cbd5e1;
+            line-height: 1.6;
+        }
+
+        footer {
+            padding: 30px;
+            text-align: center;
+            color: #94a3b8;
+            background: #020617;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 40px;
+            }
+
+            .subtitle {
+                font-size: 18px;
+            }
+
+            header {
+                min-height: 550px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+
+    <img
+        src="assets/logo for mwinukaCapture.png"
+        alt="mwinukaCapture Logo"
+        class="logo"
+    >
+
+    <h1>mwinukaCapture</h1>
+
+    <p class="subtitle">
+        A simple, lightweight and open-source screen capture tool
+        designed to make capturing your screen easy.
+    </p>
+
+    <div class="buttons">
+
+        <a
+            class="button"
+            href="mwinukaCapture_1.0_all.deb"
+		Download>
+		Download mwinukaCapture
+            
+        </a>
+
+        <a
+            class="button github"
+            href="https://github.com/mwinuk-hub/mwinukaCapture">
+            View on GitHub
+        </a>
+
+    </div>
+
+</header>
+
+
+<section>
+
+    <h2>Why mwinukaCapture?</h2>
+
+    <div class="features">
+
+        <div class="feature">
+            <h3>⚡ Lightweight</h3>
+            <p>
+                Designed to perform screen capture without unnecessary
+                complexity or heavy resource usage.
+            </p>
+        </div>
+
+        <div class="feature">
+            <h3>📸 Easy Capture</h3>
+            <p>
+                Quickly capture your screen using a simple and
+                straightforward interface.
+            </p>
+        </div>
+
+        <div class="feature">
+            <h3>🐧 Linux Support</h3>
+            <p>
+                Built to work with Linux systems and provide a
+                convenient screen capture experience.
+            </p>
+        </div>
+
+        <div class="feature">
+            <h3>🔓 Open Source</h3>
+            <p>
+                The source code is publicly available on GitHub,
+                allowing everyone to explore and contribute.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="screenshot-section">
+
+    <h2>mwinukaCapture in Action</h2>
+
+    <img
+        src="assets/Screenshot From 2026-09-10 09-20-18.png"
+        alt="mwinukaCapture Screenshot"
+        class="screenshot"
+    >
+
+</section>
+
+
+<section class="download">
+
+    <h2>Download mwinukaCapture</h2>
+
+    <p>
+        Get the latest version of mwinukaCapture from the project's
+        GitHub releases page.
+    </p>
+
+    <a
+        class="button"
+        href="https://github.com/mwinuk-hub/mwinukaCapture/releases">
+        Download Now
+    </a>
+
+</section>
+
+
+<footer>
+
+    © 2026 mwinukaCapture · Open Source Project
+
+</footer>
+
+</body>
+</html>
